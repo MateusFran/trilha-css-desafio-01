@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header{
+    border-bottom: 1px solid #33A8DB;
+    background-image: none;
+    text-align: center;
+
+    background-image: linear-gradient(#00000080,#25759730, #00000080), url("/assets/images/banner.png");
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: bolder;
+
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2{
+    color: #33A8DB;
+}
+
+img{
+    max-width: 100%;
+}
+
+.banner-content{
+    max-width: 40%;
+    margin: 60px auto;
+}
+
+#subscribe-button{
+    width: 50%;
+    height: 50px;
+    color: #33A8DB;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid linear-gradient(#33A8DB, #1472B7);
+    background: transparent;
+}
