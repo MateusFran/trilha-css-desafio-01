@@ -1,27 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('reset.css');
 
 body{
-    padding: 0;
-    margin: 0;
+    
+    color: white;
     font-family: "Raleway", sans-serif;
     background-color: black;
-    color: white;
+}
+
+p{
+    padding: 20px 0px;
 }
 
 header{
     border-bottom: 1px solid #33A8DB;
-    text-align: center;
-    
-    background-image: linear-gradient(#00000080,#25759730, #00000080), url("/assets/images/banner.png");
+    background-image: linear-gradient(#00000080,#25759730, #00000080), url("../images/banner.png");
+    background-size: cover;
+}
+
+header p{
+    font-size: 1.25rem;
 }
 
 section{
+    box-sizing: border-box;
     border-bottom: 1px solid #33A8DB;
+}
+
+footer{
+    background-image: linear-gradient(#00000080,#2575974c)
+}
+
+footer p{
+    padding: 0;
+}
+
+footer a{
+    color: #31A8DD;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.banner-content, .modules-content, .challenges-content{
+    margin: auto;
+    padding: 80px 0px;
+    max-width: 50%;
+    text-align: center;
+}
+
+.world-change-content{
+    margin-left: 20%;
+    padding-top: 100px;
+    max-width: 50%;
+}
+
+.footer-content{
+    margin: auto;
+    padding: 40px 0px;
+    max-width: 50%;
+    text-align: center;
 }
 
 h1{
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: 900;
+    font-size: 2.5rem;
 
     background: -webkit-linear-gradient(#33A8DB, #1472B7);
     -webkit-background-clip: text;
@@ -29,8 +71,10 @@ h1{
 }
 
 h2{
-    text-transform: uppercase;
     color: #33A8DB;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 button span{
@@ -39,17 +83,6 @@ button span{
 
 img{
     max-width: 100%;
-}
-
-.banner-content{
-    max-width: 40%;
-    margin: 0px auto;
-}
-
-.section-content{
-    max-width: 65%;
-    text-align: center;
-    margin: 70px auto;
 }
 
 .module-list{
@@ -64,30 +97,42 @@ button:hover{
 }
 
 .module-button{
-    width: 500px;
-    height: 38px;
+    width: 550px;
+    height: 50px;
     color: white;
+
+    font-size: 1rem;
+
     background-color: #252525;
     border: 1px solid #33A8DB;
-    border-radius: 20px;
-    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.74) inset;
-}
-
-#logo-dio-top{
-    margin-top: 50px;
+    border-radius: 30px;
+    box-shadow: -5px 3px 5px rgba(0, 0, 0, 0.74) inset;
 }
 
 #subscribe-button{
     width: 50%;
     height: 50px;
-    margin-bottom: 50px;
     color: #33A8DB;
-    font-weight: bold;
+    font-weight: 780;
+    letter-spacing: 2px;
     text-transform: uppercase;
     border: 2px solid;
-    background: transparent;
+    background-color: transparent;
+    border-image: linear-gradient(#31A8DD, #1472B7);
+    border-image-slice: 10;
 }
 
 #change-text{
-    position:absolute;
+    margin: 0;
+    color: white;
+    font-size: 2rem;
+    position: relative;
 }
+
+#section-world-change{
+    height: 400px;
+    background-image: url(../images/woman-code.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
